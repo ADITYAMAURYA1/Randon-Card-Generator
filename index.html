@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" rel="script"></script>
+    <title>cc gen</title>
+</head>
+<body>
+      <h1 style="background-color: forestgreen;color: white;" align="center">Random Card generator</h2>
+      <div style="width: 100%; background-color: #ddd;min-height: 500px">
+        <div style="min-height: 500px; width: 20%; float: left;"></div>
+        <div style="min-height: 500px; width: 30%; float: left;">
+              <h2 style=" font-size: large;color:rgb(4, 58, 175)">Enter the starting digits</h2>
+              <input id="binn" type="text" onkeypress="valid()" style="box-decoration-break: none; margin-left: 20px; width: 200px;" placeholder="Enter the starting digits" maxlength="16">
+              <span id="sp"></span>
+              <br>
+              <h2 style=" font-size: large;color:rgb(9, 16, 154)">Please Choose Expiry date</h2>
+               Month
+              <select id="m">
+                <option value="222">Random</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              &nbsp;
+              Year
+              <select id="y">
+                <option value="111">Random</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+              <h2 style=" font-size: large;color:rgb(6, 15, 140) ;">Please Choose Enter Cvv</h2>
+        <input id="c" type="text" min="0" max="3" placeholder="left empty for Randomize it">
+        <br>  <br>
+               <span style="color: blue;">Enter the number of cards you want :</span>
+               <br>
+               <input id="n" type="text" placeholder="Enter the number" value="10">
+              <button onclick="gen()" style="background-color: teal; color: white; width: 100px;">Generate</button>
+              <br>
+        </div>
+        <div style="min-height: 500px; width: 40%; float: left;">
+            <h3 style="font-size: large;color: blueviolet;">Here is generated cards</h3>
+            <textarea id="result" type="text" style="margin-left: 20px;height: 300px; width: 300px;"></textarea>
+        </div>
+        <div style="min-height: 500px; width: 9%; float: left;"></div>
+    </div>
+</body>
+</html>
